@@ -4,9 +4,17 @@
         Expected output: 1e, 04
 """        
         
-a=input('Введіть Послідовність чисел через кому без відступу: ').split(',')
-for i in range(len(a)):
-    a[i]=int(a[i])
-    a[i]=hex(a[i])
-print("Результат: ",*a,sep=",")
+def toHex(dec):
+    digits = "0123456789ABCDEF"
+    x = (dec % 16)
+    rest = dec // 16
+    if (rest == 0):
+        return digits[x]
+    return toHex(rest) + digits[x]
+
+result = []
+for i in list(input('Введіть числа:').split(",")):
+    result.append(toHex(int(i)))
+
+print(", ".join(result))
 
