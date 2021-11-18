@@ -1,4 +1,4 @@
-4. Write a script to concatenate N strings.
+#  4. Write a script to concatenate N strings.
 
 
 a=input('Введіть послідовність строк через кому без відступу:').split(',')
