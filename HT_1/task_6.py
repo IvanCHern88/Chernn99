@@ -1,7 +1,9 @@
-# 6. Write a script to check whether a specified value is contained in a group of values.
+"""
+6. Write a script to check whether a specified value is contained in a group of values.
         Test Data :
         3 -> [1, 5, 8, 3] : True
         -1 -> (1, 5, 8, 3) : False
+"""
           
 print('Введіть числа в список через кому без відступу:')
 a=input().split(',') # створює список строк 
