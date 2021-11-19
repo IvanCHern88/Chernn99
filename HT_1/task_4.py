@@ -1,11 +1,11 @@
 #  4. Write a script to concatenate N strings.
 
 
-user_number = int(input('Введіть кількість строк які хочете додати:'))
+user_number =int(input('Введіть кількість строк які хочете додати:'))
 
-result = ""
-strs = list(input('Введіть строки через кому:').split(','))
-for curr in strs:
-    result = result + curr
-
+result =""
+for i in range(user_number):
+    print(i)
+    user_input = input("Введіть строку: ")
+    result+=user_input
 print(result)
