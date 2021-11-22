@@ -8,3 +8,12 @@
                 
 """
 
+dictionary = {1 : 11, 2 : 2, 3 : 89, 4: 32, 5 : 188}
+
+max_element = max(list(dictionary.values()))
+min_element = min(list(dictionary.values()))
+
+print(f"MAX: {max_element}")
+print(f"MIN: {min_element}")
+
+
