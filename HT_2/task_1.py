@@ -3,4 +3,8 @@
    Елементами списку повинні бути як рядки, так і числа.
 """
 
+def task1(a_list):
+    print(''.join([str(item) for item in a_list]))
 
+
+task1(['element', 12, 33, '2311'])
