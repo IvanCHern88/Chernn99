@@ -7,3 +7,10 @@
         Expected Output: [(10, 20, "100"), (40, 50, 60, "100"), (80, "100"), ("100",)]
 """
 
+def task2(a_list):
+    value = input("Введіть значення: ")
+    a_list = [() if len(item) == 0 else (value,) if len(item) == 1 else (*item[:-1], value) for item in a_list]
+    return a_list
+
+
+print(task2([(1, 2, 4), (35, 100, 456, 88), ('122', 1), ('22', 23), (23,), ()]))
