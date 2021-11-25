@@ -7,3 +7,13 @@
 -  x == y.      вiдповiдь - х дорiвнює z
 """
 
+def func(x,y):
+    if x > y:
+        return f'x>y на {x-y}'
+    if x < y:
+        return f'y<x на {y - x}'
+    if x == y:
+        return f'x=y '
+
+
+print(func(4,3))
