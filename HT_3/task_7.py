@@ -7,7 +7,10 @@ def func(x,y,str):
        return x - y
    if str == '*':
        return x * y
+   if str == '/' and y == 0:
+       return 'Error'
    if str == '/':
        return x / y
+   
 
 print(func(4,3,'+'))
