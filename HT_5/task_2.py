@@ -23,6 +23,8 @@ def ValidateAuth(login, password):
     raise PasswordException("Incorrect password size! Password should contain 8 symbols or more!")
   if re.search('\d+', password) is None:
     raise PasswordException("Incorrect password! Password should contain digits!")
+  if not "." in password:
+    raise PasswordException("Incorrect password! Password should contain one more DOT!")
 
 
 if __name__ == "__main__":
