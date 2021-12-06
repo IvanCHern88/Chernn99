@@ -23,9 +23,9 @@
 import time
 
 print("автомобильный" + "\t" + "пешеходный")
-while True:  # бесконечный цикл
+while True:  
     print("red" + "\t" + "green")
-    time.sleep(1)  # ждешь секунду
+    time.sleep(1)  
     print("red" + "\t" + "green")
     time.sleep(1)
     print("red" + "\t" + "green")
