@@ -14,18 +14,19 @@
    .......
    """
 
-def MyGenerator(iterableSeq):
 
-  for n in iterableSeq:
-    if n == iterableSeq[-1]:
-      yield n
-      for elem in MyGenerator(iterableSeq):
-        print(elem)
+
+def MyGenerator(iterableSeq):
+  while True:
+    for i in iterableSeq:
+      if i == iterableSeq[-1]:
+        yield i
+        break
+      yield i
     else:
-      yield n
+      break
 
 
 if __name__ == "__main__":
   for elem in MyGenerator([1, 2, 3]): 
     print(elem)
-
